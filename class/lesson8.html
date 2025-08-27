@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 8</title>
+    <link
+      rel="stylesheet"
+      href="../../../bootstrap-5.3.7/dist/css/bootstrap.css"
+    />
+    <script
+      src="../../../bootstrap-5.3.7/dist/js/bootstrap.bundle.js"
+      defer
+    ></script>
+    <script src="./lesson8.js" defer></script>
+  </head>
+  <body>
+    <!-- Form Validation -->
+    <div class="container">
+      <h2 class="text-center text-uppercase my-5">sign up</h2>
+      <div class="row offset-4">
+        <div class="col-md-6 mb-3 border border-1 rounded-3 p-3 border-info">
+          <form action="">
+            <div class="mb-3">
+              <label class="form-label" for=""> Username: </label>
+              <input
+                type="text"
+                id="userName"
+                placeholder="Enter your username"
+                class="form-control"
+              />
+              <div id="userError" class="text-danger"></div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for=""> Email: </label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your email address"
+                class="form-control"
+              />
+              <div id="emailError" class="text-danger"></div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for=""> Password: </label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                class="form-control"
+              />
+              <div id="passwordError" class="text-danger"></div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for=""> Confirm password: </label>
+              <input
+                type="password"
+                id="cpass"
+                placeholder="Confirm your Password"
+                class="form-control"
+              />
+              <div id="cpassError" class="text-danger"></div>
+            </div>
+            <button class="btn btn-success" id="submitBtn">Sign Up</button>
+            <div id="successMsg" class="text-info"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

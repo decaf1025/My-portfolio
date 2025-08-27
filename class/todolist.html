@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="../../../bootstrap-5.3.7/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <script
+      src="../../../bootstrap-5.3.7/dist/js/bootstrap.bundle.js"
+      defer
+    ></script>
+    <script src="./todolist.js" defer></script>
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <h1 class="text-center mb-4">📝 My To-Do List</h1>
+      <!-- Task Counter -->
+      <span id="taskCounter" class="d-block text-center">Tasks remaining: 0</span>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12">
+          <div class="input-group mb-3 border-0">
+            <input
+              type="text"
+              id="taskInput"
+              class="form-control"
+              placeholder="Add a task..."
+            />
+            <button class="btn btn-outline-primary" id="addTaskBtn">
+              Add task
+            </button>
+          </div>
+          <ul class="list-group" id="taskList"></ul>
+
+          <!-- Clear All Button -->
+          <button id="clearBtn" class="btn mt-3 p-6 bg-info">Clear All</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

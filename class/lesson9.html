@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="../../../bootstrap-5.3.7/dist/css/bootstrap.css"
+    />
+    <script
+      src="../../../bootstrap-5.3.7/dist/js/bootstrap.bundle.js"
+      defer
+    ></script>
+    <script src="./lesson9.js" defer></script>
+  </head>
+  <body>
+    <!-- <button id="btn">Click</button>
+    <p id="result"></p> -->
+
+    <form>
+      <div class="row offset-4 my-3">
+        <div class="col-md-6">
+          <label class="form-label"> Email: </label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter your email address"
+            class="form-control"
+          />
+          <p id="emailError" class="text-danger"></p>
+          <p id="elError" class="text-danger"></p>
+          <p id="emailSuccess" class="text-info"></p>
+          <div>
+            <button class="btn btn-success" id="submitBtn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

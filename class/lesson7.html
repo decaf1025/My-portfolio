@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+    <script src="./lesson7.js" defer></script>
+</head>
+<body>
+    <button id="btn"> Click Me! </button>
+
+    <p id="para"> Hover Mouse Here </p>
+
+    <input type="text" id="name">
+
+    <button class="colorBtn"> Red </button>
+    <button class="colorBtn"> Green </button>
+    <button class="colorBtn"> Blue </button>
+
+    <script>
+        let buttons = document.querySelectorAll(".colorBtn");
+        buttons.forEach(btn => {
+            btn.addEventListener("click", function () {
+                console.log(this.innerHTML + " Button Clicked");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+    #display {
+      font-size: 18px;
+      text-align: right;
+      width: 100%;
+    }
+    .buttons {
+      text-align: center;
+      height: 100%;
+      width: 100%;
+    }
+    button {
+      height: 60px;
+      width: 60px;
+      border: none;
+    }
+    button:hover {
+      opacity: 0.9;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+    <link
+      rel="stylesheet"
+      href="../../bootstrap-5.3.7/dist/css/bootstrap.css"
+    />
+    <script
+      src="../../bootstrap-5.3.7/dist/js/bootstrap.bundle.js"
+      defer
+    ></script>
+    <script src="./calc.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <div class="row offset-4">
+        <div class="col-md-6 mt-3 p-3 border border-1 rounded-3 border-info">
+          <label class="form-label"> Calculator </label>
+          <input type="text" class="form-control mb-3" id="display" disabled/>
+          <div class="buttons justify-content-center">
+            <button type="button" class="m-1" data-value="0">0️⃣</button>
+            <button type="button" class="m-1" data-value="1">1️⃣</button>
+            <button type="button" class="m-1" data-value="2">2️⃣</button>
+            <button type="button" class="m-1" data-value="3">3️⃣</button>
+            <button type="button" class="m-1" data-value="4">4️⃣</button>
+            <button type="button" class="m-1" data-value="5">5️⃣</button>
+            <button type="button" class="m-1" data-value="6">6️⃣</button>
+            <button type="button" class="m-1" data-value="7">7️⃣</button>
+            <button type="button" class="m-1" data-value="8">8️⃣</button>
+            <button type="button" class="m-1" data-value="9">9️⃣</button>
+            <button type="button" class="m-1" data-value=".">.</button>
+            <button type="button" class="m-1" id="backSpace">⛔</button>
+            <button type="button" class="m-1" data-value="+">➕</button>
+            <button type="button" class="m-1" data-value="-">➖</button>
+            <button type="button" class="m-1" data-value="*">✖</button>
+            <button type="button" class="m-1" data-value="/">➗</button>
+            <button type="button" class="m-1" id="equalTo">=</button>
+            <button type="button" class="m-1" id="clearBtn">©</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
